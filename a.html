@@ -1,36 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
- <link rel="stylesheet" 
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="a.css">
+<link rel="stylesheet" 
 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
- 
+
 </head>
 <body>
- <div class="container-fluid">
- <marquee> <h1 color:Blue;><b style="color: green;">Sir 
- Visvaraya Institude Of Technology & Medical 
- Campus,Chincholi,Nashik</b><h1></marquee>
- <div class="row">
- <div class="col-sm-3" style="background-color:navajowhite;"><b>Department</b>
- </div>
- <div class="col-sm-3" style="background-color:aqua;"><b>Staff</b></div>
- <div class="col-sm-3" style="background-color:navajowhite;"><b>Students</b></div>
- <div class="col-sm-3" style="background-color:aqua;"><b>Office</b></div>
- </div>
- <br/>
- <br/>
- <br/>
- <div class="container text-center">
- <div class="row">
- <div class="col"><h1> D Pharma</h1></div>
- <div class="col"><h1> B Pharma</h1></div>
- <div class="col"><h1>Jr Collage</h1></div>
- <div class="col"><h1>CBS School</h1></div>
- </div>
- </div>
- <marquee><h2>jay shri ram</h2></marquee>
- </div>
+    <form>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" placeholder="Enter your first name">
+        <br><br>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" placeholder="Enter your last name">
+        <br><br>
+
+        <label for="mobile">Mobile No.</label>
+        <input type="text" id="mobile" placeholder="Enter your mobile number">
+        <br><br>
+
+        <label for="address">Address</label>
+        <input type="text" id="address" placeholder="Enter your address">
+        <br><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password">
+        <br><br>
+
+        <h2>Select Your Branch</h2>
+        <label>
+            <input type="radio" name="branch" value="IT"> IT
+        </label>
+        <label>
+            <input type="radio" name="branch" value="Computer"> Computer
+        </label>
+        <br><br>
+
+        <h2>Select Your Class</h2>
+        <label><input type="radio" name="class" value="FE"> FE</label>
+        <label><input type="radio" name="class" value="SE"> SE</label>
+        <label><input type="radio" name="class" value="TE"> TE</label>
+        <label><input type="radio" name="class" value="BE"> BE</label>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
